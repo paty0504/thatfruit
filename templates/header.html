@@ -1,0 +1,19 @@
+<header id="header">
+    <div class="container d-flex justify-content-md-end justify-content-center align-items-center header-list">
+        <div class="account">
+            <div class="dropdown">
+          <span class="dropdown-toggle m-0 d-inline" id="dropdownMenuButton" >
+            <i class="fas fa-user"></i> Tài khoản
+          </span>
+                <div class="dropdown-menu" >
+                    <a class="dropdown-item" href="{{url_for('login')}}">Đăng nhập</a>
+                    <a class="dropdown-item" href="{{url_for('signIn')}}">Đăng ký</a>
+                    <a class="dropdown-item" id="out" >Đăng xuất</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="address-company"><i class="fas fa-map-marker-alt"></i> Bản đồ</a>
+    </div>
+</header>

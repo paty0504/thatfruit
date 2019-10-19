@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+
+        <a href="{{url_for('home')}}"><img src="https://i.ibb.co/G0m3WNt/logothatfruit.png" alt="" id="logoNav"></a>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08"><ul class="navbar-nav"><li class="nav-item"> <a class="nav-link" href="{{url_for('home')}}">TRANG CHỦ</a></li><li class="nav-item"><a class="nav-link" href="{{url_for('aboutme')}}">GIỚI THIỆU</a></li><li class="nav-item dropdown mega-dropdown"><a class="nav-link dropdown-toggle" href="" id="menudropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SẢN PHẨM</a> <ul class="dropdown-menu mega-dropdown-menu" aria-labelledby="menudropdown3">
+                        <div class="container">
+                            <div class="row d-flex justify-content-between db"><li class="col-12  col-lg-2"><ul><li class="dropdown-header" id="1"><a href="{{url_for('listProduct')}}">Trái cây tươi</a></li><li><a >Trái cây ôn đới</a></li><li><a href>Trái cây nhiệt đới</a></li></ul></li><li class="col-12  col-lg-2"><ul><li class="dropdown-header" id="2"><a href>Trái cây khô </a></li><li><a href>Quả khô </a></li><li><a href>Hạt khô</a></li></ul></li><li class="col-12  col-lg-2"><ul><li class="dropdown-header" id="3"><a href>Nước hoa quả</a></li><li><a href="list-product?small-category=5">Nước Detox</a></li><li><a href="list-product?small-category=6">Nước ép thường</a></li></ul></li><li class="col-12  col-lg-2"><ul><li class="dropdown-header" id="4"><a href="list-product?big-category=4">Trái cây bán sỉ</a></li><li><a href="list-product?small-category=7">Trái cây Mỹ</a></li><li><a href>Trái cây Úc</a></li><li><a href>Trái cây New Zealand</a></li><li><a href="list-product?small-category=10">Trái cây Pháp</a></li></ul></li><li class="col-12  col-lg-2"><ul><li class="dropdown-header" id="5"><a href="list-product?big-category=5">Giỏ quà biếu</a></li><li><a href="{{url_for('listProduct')}}">Quả Trung Quốc</a></li></ul></li><li class="col-12  col-lg-2"><ul><li class="dropdown-header" id="6"><a hrefPr}>Trái cây sạch</a></li></ul></li></div></div></ul></li><li class="nav-item"><a class="nav-link" href="{{url_for('news')}}">TIN TỨC</a></li><li class="nav-item"><a class="nav-link" href="{{url_for('contact')}}">LIÊN HỆ</a></li></ul></div>
+            <div class="cart1">
+ <button class="card-item1 btn card1" type="button">
+                        <i class="fas fa-cart-arrow-down"></i><span> 0 sp</span> <span>0 VNĐ</span>
+                    </button>
+</div>
+    </div>
+</nav>

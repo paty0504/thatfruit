@@ -1,0 +1,134 @@
+/* Main contact */
+/* contact-map */
+
+
+#contact-map.map-google{
+    margin-top: 10px !important;
+}
+#contact-map .map-contact__wapper{
+    padding: 5px;
+    border: 1px solid #a3a3a3;
+    height: 272px;
+}
+/* end contact map */
+/* contact info */
+#contact-info{
+    padding: 40px 0 0 0;
+}
+#contact-info .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+}
+#contact-info .contact-info__wapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact-info__wapper i{
+    display: block;
+    color: green;
+    font-size: var(--font-42);
+    padding: 0 0 10px 0;
+    cursor: pointer;
+    transition: .5s;
+}
+.contact-info__wapper i:hover{
+    -webkit-animation: shake 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: shake 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+.contact-info__wapper span{
+    display: block;
+    font-size: var(--font-13);
+    font-weight: 600;
+}
+.contact-info__wapper span a{
+    text-decoration: none;
+    color: var(--text-color1);
+}
+.contact-info__wapper span a:hover{
+    color: var(--text-hover);
+}
+#contact-info p{
+    margin-top: 30px !important;
+    color: #a3a3a3;
+    font-weight: 600;
+    font-size: var(--font-13);
+}
+/* end contact info */
+/* contact-text */
+#contact-text{
+    padding: 10px 0 60px 0;
+}
+#contact-text h3{
+    text-transform: uppercase;
+    font-size: var(--font-26);
+    margin-bottom: 20px;
+}
+#contact-text .contact-text__wp{
+    border: 1px solid #999999;
+    padding: 8px 5px;
+    display: flex;
+    align-items: center;
+}
+#contact-text .contact-text__wp span{
+    color: #999999;
+    font-size: var(--font-13);
+}
+#contact-text .contact-text__wp input{
+    border: none;
+    outline: none;
+    width: 60%;
+    padding: 0 0 0 10px;
+}
+#contact-text .contact-text__wp input[type="text"]{
+    font-size:var(--font-16);
+    text-transform: unset;
+    font-weight: 600;
+}
+#contact-text textarea{
+    margin-top: 20px;
+    width: 100%;
+    min-height: 136px;
+    outline: none;
+    padding: 10px;
+    font-size: var(--font-16);
+    border: 1px solid #b2b2b2;
+}
+#contact-text .btn{
+    outline: none;
+    color: var(--text-color2);
+    background-color: green;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+#contact-text .btn:hover{
+    background-color:var(--color-brown-hover);
+}
+/* end contact-text */
+/* End Main Contact */
+
+@media (max-width:576px) {
+    /* contact */
+    #contact-text .contact-text__wp {
+        margin: 20px 0;
+    }
+
+    #contact-info .contact-info__wapper {
+        margin-bottom: 20px;
+    }
+    /* end contact */
+}
+@media (min-width:577px ) and ( max-width:768px) {
+    /* contact */
+    #contact-text .contact-text__wp {
+        margin: 20px 0;
+    }
+    #contact-info .contact-info__wapper {
+        margin-bottom: 20px;
+    }
+    /* end contact */
+}

@@ -1,0 +1,147 @@
+
+
+
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+   
+    <title>ThatFruit</title>
+   
+    {% include 'meta-data.html' %}
+
+</head>
+<body>
+    
+<!-- header -->
+{% include 'header.html' %}
+<!-- end header -->
+<!-- search area -->
+{% include 'search.html' %}
+<!-- end search area -->
+<!-- nav -->
+{% include 'navbar.html' %}
+<!-- end nav -->
+    
+
+<main>
+    <section id="contact-map" class="map-google">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="map-contact__wapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4503604915963!2d105.84815611437627!3d21.014658586006004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8c92a5b1db%3A0xb204a70204fcab4c!2zMTIwIFRyaeG7h3UgVmnhu4d0IFbGsMahbmcsIELDuWkgVGjhu4sgWHXDom4sIEhhaSBCw6AgVHLGsG5nLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1570417340496!5m2!1svi!2s" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen="">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-info">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-2 col-12">
+                    <div class="contact-info__wapper hotlinem">
+                        <i class="fas fa-mobile-alt "></i>
+                        <span> Hotline: <a href="tel:0981 992 352"><a href="tel:0981 992 352">0981 992 352</a></a> </span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-12">
+                    <div class="contact-info__wapper d-flex hotlinem">
+                        <i class="fas fa-phone-volume"></i>
+                        <span> Call: <a href="tel:0981 992 352"><a href="tel:0981 992 352">0981 992 352</a></a> </span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-12">
+                    <div class="contact-info__wapper company-mailctu">
+                        <i class="fas fa-envelope"></i>
+                        <span><a href="mailto:thatfruit@gmail.com"><a href="mailto:thatfruit@gmail.com">thatfruit@gmail.com</a></a></span>
+                    </div>
+                </div>
+                <div class="col-md-8 col-12">
+                    <p class="text-center">Nếu nhà cung cấp không giao sản phẩm của bạn đúng hạn hoặc chất lượng sản
+                        phẩm không đáp ứng
+                        các tiêu chuẩn được đặt ra trong hợp đồng của bạn, Thật Fruits sẽ hoàn trả số tiền thanh
+                        toán của bạn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Liên hệ</h3>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12" style="padding: 0">
+                            <div class="row">
+                                <div class="col-md-4 col-12">
+                                    <div class="contact-text__wp">
+                                        <span>Họ và tên*</span>
+                                        <input type="text" id="ufullname">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="contact-text__wp">
+                                        <span>Số điện thoại*</span>
+                                        <input type="text" id="uphone">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="contact-text__wp">
+                                        <span>Email*</span>
+                                        <input type="text" id="umail">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <textarea id="ufb"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button href="#" class="btn" type="" id="contact-send">Gửi</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- mail area -->
+    <section id="mail-area">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-around">
+                <div class="col-md-3 col-sm-12">
+                    <p class="text-center m-0">Đăng kí để nhận lời khuyên, tin tức và khuyến mãi từ Thật Fruit</p>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <div class="input-group">
+                        <input type="text" class="  search-query form-control" placeholder="Emai của bạn" id="valsmail">
+                        <span class="input-group-btn">
+              <button class="btn" type="button" id="btsmail" onclick="setFormFeedBack()">
+                Đăng kí
+              </button>
+            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end mail area -->
+</main>
+    
+<!-- footer -->
+{% include 'footer.html' %}
+<!-- end footer -->
+
+<!-- Up to top -->
+<div class="nutup">
+    <button id="up" style="display: inline-block;"><i class="fas fa-arrow-up"></i></button>
+</div>
+<!-- end up to top -->
+    <!-- Main Js -->
+   
+</body>
+</html>

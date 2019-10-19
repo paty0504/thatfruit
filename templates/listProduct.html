@@ -1,0 +1,530 @@
+
+
+
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+   
+    <title>ThatFruit</title>
+   
+    {% include 'meta-data.html' %}
+
+</head>
+<body>
+    
+<!-- header -->
+{% include 'header.html' %}
+<!-- end header -->
+<!-- search area -->
+{% include 'search.html' %}
+<!-- end search area -->
+<!-- nav -->
+{% include 'navbar.html' %}
+<!-- end nav -->
+    
+
+<main>
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner__wp">
+                        <div class="banner-text">
+                            <h4>Giới thiệu</h4>
+                            <a href="{{url_for('home')}}">Trang chủ</a>
+                            
+                        </div>
+                        <div class="banner-bg">
+                            <img src="../static/img/banner.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="infor-list-product">
+                <div id="tt-list" class="if-list-pr-left"> <span> Hiển thị 9 sản phẩm của kết quả</span></div>
+
+                <div class="if-list-pr-right">
+                    <span>Sắp xếp</span>
+                    <div class="select-soft">
+                        <span>Mặc định <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <ul>
+                            <li id="fildef">Mặc định</li>
+                            <li id="filprice">Theo giá</li>
+                        </ul>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div class="list-product">
+
+                <div id="featuredsproducts" class="row col-md-12" style="padding: 0">
+
+                    <div class="inner-left preview" id="demo1" style="width: 100%">
+                        <div class="fa-prd"><div class="item-pr col-md-6 col-lg-4 col-xs-6" style="max-width: 400px;">
+                <div class="item-pr-v2 add-id-cart it-prr" data-id="1">
+                <div class="img-prduct">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                            <a href="product?id=1">
+                             <img src="https://fruitshop.7uptheme.net/wp-content/uploads/2017/04//fruit_21-250x250.jpg" alt="">
+
+</a>
+
+                            </div>
+                            <div class="flip-box-back">
+                            <a href="product?id=1">
+                               <img src="https://i.ibb.co/9rn438z/strawberry2.png">
+                                <i class="fas fa-eye"></i>
+
+</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-product">
+                    <div class="fp__wapper" style="text-align: center;">
+                    <a href="product?id=1">
+                     <span class="fp__cap">Dâu tây Đà Lạt</span>
+</a>
+
+                        <i class="fp__price"><del> 200.000 </del> 100.000 </i>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <hr class="divider">
+                        <p style="display: none;">Dâu tây Đà Lạt giống New Zealand là một trong các giống dâu tây cao cấp nhất được trồng thủy canh tại Đà Lạt. Trái dâu tây Đà Lạt giống New Zealand có màu sắc bắt mắt, thịt giòn, ngọt và đặc biệt là có hương thơm đặc trưng không thua kém gì dâu tây nhập khẩu.</p>
+
+                        <a class="fp__label click-add-cart"> Thêm vào giỏ</a>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="item-pr col-md-6 col-lg-4 col-xs-6" style="max-width: 400px;">
+                <div class="item-pr-v2 add-id-cart it-prr" data-id="2">
+                <div class="img-prduct">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                            <a href="product?id=2">
+                             <img src="https://fruitshop.7uptheme.net/wp-content/uploads/2017/04//fruit_07-250x250.jpg" alt="">
+
+</a>
+
+                            </div>
+                            <div class="flip-box-back">
+                            <a href="product?id=2">
+                               <img src="https://i.ibb.co/9rn438z/strawberry2.png">
+                                <i class="fas fa-eye"></i>
+
+</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-product">
+                    <div class="fp__wapper" style="text-align: center;">
+                    <a href="product?id=2">
+                     <span class="fp__cap">Chanh không hạt</span>
+</a>
+
+                        <i class="fp__price"><del> 200.000 </del> 100.000 </i>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <hr class="divider">
+                        <p style="display: none;">Dâu tây Đà Lạt giống New Zealand là một trong các giống dâu tây cao cấp được trồng thủy canh tại Đà Lạt. Trái dâu tây Đà Lạt giống New Zealand có màu sắc bắt mắt, thịt giòn, ngọt và đặc biệt là có hương thơm đặc trưng không thua kém gì dâu tây nhập khẩu.</p>
+
+                        <a class="fp__label click-add-cart"> Thêm vào giỏ</a>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="item-pr col-md-6 col-lg-4 col-xs-6" style="max-width: 400px;">
+                <div class="item-pr-v2 add-id-cart it-prr" data-id="3">
+                <div class="img-prduct">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                            <a href="product?id=3">
+                             <img src="https://fruitshop.7uptheme.net/wp-content/uploads/2017/04//fruit_02-250x250.jpg" alt="">
+
+</a>
+
+                            </div>
+                            <div class="flip-box-back">
+                            <a href="product?id=3">
+                               <img src="https://i.ibb.co/9rn438z/strawberry2.png">
+                                <i class="fas fa-eye"></i>
+
+</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-product">
+                    <div class="fp__wapper" style="text-align: center;">
+                    <a href="product?id=3">
+                     <span class="fp__cap">Chanh không hạt</span>
+</a>
+
+                        <i class="fp__price"><del> 200.000 </del> 100.000 </i>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <hr class="divider">
+                        <p style="display: none;">Dâu tây Đà Lạt giống New Zealand là một trong các giống dâu tây cao cấp được trồng thủy canh tại Đà Lạt. Trái dâu tây Đà Lạt giống New Zealand có màu sắc bắt mắt, thịt giòn, ngọt và đặc biệt là có hương thơm đặc trưng không thua kém gì dâu tây nhập khẩu.</p>
+
+                        <a class="fp__label click-add-cart"> Thêm vào giỏ</a>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="item-pr col-md-6 col-lg-4 col-xs-6" style="max-width: 400px;">
+                <div class="item-pr-v2 add-id-cart it-prr" data-id="4">
+                <div class="img-prduct">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                            <a href="product?id=4">
+                             <img src="https://fruitshop.7uptheme.net/wp-content/uploads/2017/04//fruit_07-250x250.jpg" alt="">
+
+</a>
+
+                            </div>
+                            <div class="flip-box-back">
+                            <a href="product?id=4">
+                               <img src="https://i.ibb.co/9rn438z/strawberry2.png">
+                                <i class="fas fa-eye"></i>
+
+</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-product">
+                    <div class="fp__wapper" style="text-align: center;">
+                    <a href="product?id=4">
+                     <span class="fp__cap">Chanh không hạt</span>
+</a>
+
+                        <i class="fp__price"><del> 200.000 </del> 200.000 </i>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <hr class="divider">
+                        <p style="display: none;">Dâu tây Đà Lạt giống New Zealand là một trong các giống dâu tây cao cấp được trồng thủy canh tại Đà Lạt. Trái dâu tây Đà Lạt giống New Zealand có màu sắc bắt mắt, thịt giòn, ngọt và đặc biệt là có hương thơm đặc trưng không thua kém gì dâu tây nhập khẩu.</p>
+
+                        <a class="fp__label click-add-cart"> Thêm vào giỏ</a>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="item-pr col-md-6 col-lg-4 col-xs-6" style="max-width: 400px;">
+                <div class="item-pr-v2 add-id-cart it-prr" data-id="5">
+                <div class="img-prduct">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                            <a href="product?id=5">
+                             <img src="https://fruitshop.7uptheme.net/wp-content/uploads/2017/04//fruit_21-250x250.jpg" alt="">
+
+</a>
+
+                            </div>
+                            <div class="flip-box-back">
+                            <a href="product?id=5">
+                               <img src="https://i.ibb.co/9rn438z/strawberry2.png">
+                                <i class="fas fa-eye"></i>
+
+</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-product">
+                    <div class="fp__wapper" style="text-align: center;">
+                    <a href="product?id=5">
+                     <span class="fp__cap">Chanh không hạt</span>
+</a>
+
+                        <i class="fp__price"><del> 200.000 </del> 50.000 </i>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <hr class="divider">
+                        <p style="display: none;">Dâu tây Đà Lạt giống New Zealand là một trong các giống dâu tây cao cấp được trồng thủy canh tại Đà Lạt. Trái dâu tây Đà Lạt giống New Zealand có màu sắc bắt mắt, thịt giòn, ngọt và đặc biệt là có hương thơm đặc trưng không thua kém gì dâu tây nhập khẩu.</p>
+
+                        <a class="fp__label click-add-cart"> Thêm vào giỏ</a>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="item-pr col-md-6 col-lg-4 col-xs-6" style="max-width: 400px;">
+                <div class="item-pr-v2 add-id-cart it-prr" data-id="6">
+                <div class="img-prduct">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                            <a href="product?id=6">
+                             <img src="https://fruitshop.7uptheme.net/wp-content/uploads/2017/04//fruit_02-250x250.jpg" alt="">
+
+</a>
+
+                            </div>
+                            <div class="flip-box-back">
+                            <a href="product?id=6">
+                               <img src="https://i.ibb.co/9rn438z/strawberry2.png">
+                                <i class="fas fa-eye"></i>
+
+</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-product">
+                    <div class="fp__wapper" style="text-align: center;">
+                    <a href="product?id=6">
+                     <span class="fp__cap">Chanh không hạt</span>
+</a>
+
+                        <i class="fp__price"><del> 200.000 </del> 50.000 </i>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <hr class="divider">
+                        <p style="display: none;">Dâu tây Đà Lạt giống New Zealand là một trong các giống dâu tây cao cấp được trồng thủy canh tại Đà Lạt. Trái dâu tây Đà Lạt giống New Zealand có màu sắc bắt mắt, thịt giòn, ngọt và đặc biệt là có hương thơm đặc trưng không thua kém gì dâu tây nhập khẩu.</p>
+
+                        <a class="fp__label click-add-cart"> Thêm vào giỏ</a>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="item-pr col-md-6 col-lg-4 col-xs-6" style="max-width: 400px;">
+                <div class="item-pr-v2 add-id-cart it-prr" data-id="8">
+                <div class="img-prduct">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                            <a href="product?id=8">
+                             <img src="https://fruitshop.7uptheme.net/wp-content/uploads/2017/04//fruit_02-250x250.jpg" alt="">
+
+</a>
+
+                            </div>
+                            <div class="flip-box-back">
+                            <a href="product?id=8">
+                               <img src="https://i.ibb.co/9rn438z/strawberry2.png">
+                                <i class="fas fa-eye"></i>
+
+</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-product">
+                    <div class="fp__wapper" style="text-align: center;">
+                    <a href="product?id=8">
+                     <span class="fp__cap">Chanh có hạt</span>
+</a>
+
+                        <i class="fp__price"><del> 10.000 </del> 12.000 </i>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <hr class="divider">
+                        <p style="display: none;">Dâu tây Đà Lạt giống New Zealand là một trong các giống dâu tây cao cấp được trồng thủy canh tại Đà Lạt. Trái dâu tây Đà Lạt giống New Zealand có màu sắc bắt mắt, thịt giòn, ngọt và đặc biệt là có hương thơm đặc trưng không thua kém gì dâu tây nhập khẩu.</p>
+
+                        <a class="fp__label click-add-cart"> Thêm vào giỏ</a>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="item-pr col-md-6 col-lg-4 col-xs-6" style="max-width: 400px;">
+                <div class="item-pr-v2 add-id-cart it-prr" data-id="9">
+                <div class="img-prduct">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                            <a href="product?id=9">
+                             <img src="https://fruitshop.7uptheme.net/wp-content/uploads/2017/04//fruit_02-250x250.jpg" alt="">
+
+</a>
+
+                            </div>
+                            <div class="flip-box-back">
+                            <a href="product?id=9">
+                               <img src="https://i.ibb.co/9rn438z/strawberry2.png">
+                                <i class="fas fa-eye"></i>
+
+</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-product">
+                    <div class="fp__wapper" style="text-align: center;">
+                    <a href="product?id=9">
+                     <span class="fp__cap">Táo Campuchia</span>
+</a>
+
+                        <i class="fp__price"><del> 15.000 </del> 20.000 </i>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <hr class="divider">
+                        <p style="display: none;">Dâu tây Đà Lạt giống New Zealand là một trong các giống dâu tây cao cấp được trồng thủy canh tại Đà Lạt. Trái dâu tây Đà Lạt giống New Zealand có màu sắc bắt mắt, thịt giòn, ngọt và đặc biệt là có hương thơm đặc trưng không thua kém gì dâu tây nhập khẩu.</p>
+
+                        <a class="fp__label click-add-cart"> Thêm vào giỏ</a>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="item-pr col-md-6 col-lg-4 col-xs-6" style="max-width: 400px;">
+                <div class="item-pr-v2 add-id-cart it-prr" data-id="10">
+                <div class="img-prduct">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                            <a href="product?id=10">
+                             <img src="https://fruitshop.7uptheme.net/wp-content/uploads/2017/04//fruit_02-250x250.jpg" alt="">
+
+</a>
+
+                            </div>
+                            <div class="flip-box-back">
+                            <a href="product?id=10">
+                               <img src="https://i.ibb.co/9rn438z/strawberry2.png">
+                                <i class="fas fa-eye"></i>
+
+</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-product">
+                    <div class="fp__wapper" style="text-align: center;">
+                    <a href="product?id=10">
+                     <span class="fp__cap">Cherry đỏ Mỹ</span>
+</a>
+
+                        <i class="fp__price"><del> 80.000 </del> 90.000 </i>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <hr class="divider">
+                        <p style="display: none;">Cherry&nbsp;là giống&nbsp;quả&nbsp;có màu đỏ thẫm, mềm, nhiều xơ và mọng nước với vị&nbsp;ngọt&nbsp;dịu pha chút chua tươi mát. Bạn có thể thưởng thức trực tiếp hoặc dùng cherry đỏ để làm bánh, trang trí cocktail...&nbsp;Bên cạnh hương vị thơm ngon, cherry đỏ&nbsp;cũng là một loại quả chứa nhiều giá trị dinh dưỡng tốt cho cơ thể. Hàm lượng vitamin A trong cherry đỏ&nbsp;cao hơn đến 19 lần so với hàm lượng có trong trái dâu tây.</p>
+
+                        <a class="fp__label click-add-cart"> Thêm vào giỏ</a>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+                    <div class="paginationjs"><div class="paginationjs-pages"><ul><li class="paginationjs-prev disabled"><a>«</a></li><li class="paginationjs-page J-paginationjs-page active" data-num="1"><a>1</a></li><li class="paginationjs-page J-paginationjs-page" data-num="2"><a href="">2</a></li><li class="paginationjs-next J-paginationjs-next" data-num="2" title="Next page"><a href="">»</a></li></ul></div></div></div>
+
+                    <!--.row-->
+                </div>
+                <!--.item-->
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <section id="mail-area">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-around">
+                <div class="col-md-3 col-sm-12">
+                    <p class="text-center m-0">Đăng kí để nhận lời khuyên, tin tức và khuyến mãi từ Thật Fruit</p>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <div class="input-group">
+                        <input type="text" class="  search-query form-control" placeholder="Emai của bạn" id="valsmail" />
+                        <span class="input-group-btn">
+              <button class="btn" type="button" id="btsmail" onclick="setFormFeedBack()">
+                Đăng kí
+              </button>
+            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% include 'footer.html' %}
+<!-- Up to top -->
+<div class="nutup">
+    <button id="up" style="display: inline-block;"><i class="fas fa-arrow-up"></i></button>
+</div>
+<!-- end up to top -->
+    <!-- Main Js -->
+   
+</body>
+</html>

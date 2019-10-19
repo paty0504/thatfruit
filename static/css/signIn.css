@@ -1,0 +1,85 @@
+.block-sign-in {
+    width: 100%;
+}
+
+.block-sign-in>.form-sign {
+    margin: auto;
+    text-align: center;
+    margin-top: 4rem;
+
+}
+.form-sign>button{
+    margin: auto;
+    padding: 0.5rem 1rem;
+    font-size: var(--font-16);
+    border-radius: 1rem;
+    padding: 0.3rem 1.5rem;
+    background: var(--color-brown);
+    border: none;
+    margin-bottom: 1rem;
+}
+.form-sign>button:hover{
+    background: var(--color-brown-hover);
+}
+.form-sign>legend{
+    font-size: var(--font-26);
+    font-weight: 600;
+    margin-bottom: 4rem;
+
+}
+.form-sign>.form-group{
+    margin-bottom: 2rem;
+    height: 30px;
+
+}
+.form-sign>.form-group>input::placeholder{
+    font-size: var(--font-16);
+}
+.form-sign>.form-group>input{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: var(--font-16);
+    border-radius: 1rem;
+}
+.block-sign-in>.section-or {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.section-or>a {
+    font-size: var(--font-13);
+    color: #7f7f7f;
+}
+.section-or::before,.section-or::after{
+    content: "";
+    height: 2px;
+    background: #ebebeb;
+    width: 33%;
+}
+.direc{
+    display: flex;
+    justify-content: center;
+}
+.form-direc{
+    border: 1px solid #e6e5e5;
+    padding: 1rem;
+    margin-bottom: 7rem;
+    display: inline-block;
+    border-radius: 5px;
+}
+.form-direc>p{
+    font-size: var(--font-20);
+}
+.form-direc>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+.form-direc>ul>li{}
+.form-direc>ul>li>a{
+    font-size: var(--font-26);
+}

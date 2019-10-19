@@ -1,0 +1,122 @@
+
+
+
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+   
+    <title>ThatFruit</title>
+   
+    {% include 'meta-data.html' %}
+
+</head>
+<body>
+    
+<!-- header -->
+{% include 'header.html' %}
+<!-- end header -->
+<!-- search area -->
+{% include 'search.html' %}
+<!-- end search area -->
+<!-- nav -->
+{% include 'navbar.html' %}
+<!-- end nav -->
+    
+<!-- <script src="../static/js/ajax/ajax_login.js"></script> -->
+<main>
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner__wp">
+                        <div class="banner-text">
+                            <h4>Giới thiệu</h4>
+                            <a href="{{url_for('home')}}">Trang chủ</a>
+                            
+                        </div>
+                        <div class="banner-bg">
+                            <img src="../static/img/banner.png" alt="">
+                        </div>
+                        <span class="bor bor1"></span>
+                        <span class="bor bor2"></span>
+                        <span class="bor bor4"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="block-login container">
+        <div class="row">
+            <div class="body-content col-12">
+                <div class="title-log">
+                    <span>Đăng nhập</span>
+                </div>
+                <div class="body-form col-lg-6">
+                    <div class=" form-login ">
+                        <legend>Tài khoản của tôi</legend>
+
+                        <div class="form-group">
+                            <label for="">Email hoặc số điện thoại</label>
+                            <input id="username" required type="text" class="form-control" id=""
+                                   pattern="^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$"
+                                   title="Nhập email hợp lệ" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Mật khẩu</label>
+                            <input id="password" required type="password" class="form-control" id="" value="">
+                        </div>
+
+
+                        <div class="button-log">
+                            <button id="submit"
+                                    class="btn ">Đăng nhập</button>
+                            <div class="remember">
+                                <input id="agree" type="checkbox" class="form-control" id="">
+                                <label aria-required="false" for="">Nhớ mật khẩu</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bottom-log ">
+                        <span>Quên mật khẩu? Hay bạn chưa có tài khoản? <a href="signIn">Đăng ký</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="mail-area">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-around">
+                <div class="col-md-3 col-sm-12">
+                    <p class="text-center m-0">Đăng kí để nhận lời khuyên, tin tức và khuyến mãi từ Thật Fruit</p>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <div class="input-group">
+                        <input type="text" class="  search-query form-control" placeholder="Emai của bạn" id="valsmail" />
+                        <span class="input-group-btn">
+              <button class="btn" type="button" id="btsmail" onclick="setFormFeedBack()">
+                Đăng kí
+              </button>
+            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    
+<!-- footer -->
+{% include 'footer.html' %}
+<!-- end footer -->
+
+<!-- Up to top -->
+<div class="nutup">
+    <button id="up" style="display: inline-block;"><i class="fas fa-arrow-up"></i></button>
+</div>
+<!-- end up to top -->
+    <!-- Main Js -->
+   
+</body>
+</html>

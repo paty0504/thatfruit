@@ -1,0 +1,148 @@
+
+
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    
+  
+    <title>ThatFruit</title>
+   
+    {% include 'meta-data.html' %}
+
+
+
+</head>
+<body>
+    
+<!-- header -->
+{% include 'header.html' %}
+<!-- end header -->
+<!-- search area -->
+{% include 'search.html' %}
+<!-- end search area -->
+<!-- nav -->
+{% include 'navbar.html' %}
+<!-- end nav -->
+    
+<script src="../static/js/ajax/ajax_news.js"></script>
+
+<main>
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner__wp">
+                        <div class="banner-text">
+                            <h4>Tin tức</h4>
+                            <a href="{{url_for('home')}}">Trang chủ</a>
+                            <span>// Tin Tức</span>
+                        </div>
+                        <div class="banner-bg">
+                            <img src="../static/img/banner3.jpg" alt="">
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="newspage">
+        <div class="container" id="pagi-news">
+            <div class="row" id="news-products">
+        <div class="col-12 col-sm-6 col-md-4">
+        <div class="np__wapper">
+        <div class="npwp-img">
+            <img src="https://i.ibb.co/nmfNpr5/fruitpicture.jpg" alt="">
+            <a href="#"><span>Fruit Fresh</span></a>
+        </div>
+        <div class="npwp-text">
+            <span>Ăn sáng đúng cách</span>
+            <time><span><i class="far fa-calendar" aria-hidden="true"></i> 14-8-2019 17:18</span></time>
+            <p>Mặc dù ăn rau cho bữa sáng không phải là phổ biến trong chế độ ăn kiêng phương Tây, nhưng nó khá phổ biến trong chế độ ăn kiêng từ các nơi trên thế giới.</p>
+            <a href="../newdetail?id=4">xem thêm</a>
+        </div>
+    </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4">
+        <div class="np__wapper">
+        <div class="npwp-img">
+            <img src="https://i.ibb.co/Qmn5wnC/newsfruit.png" alt="">
+            <a href="#"><span>Fruit Fresh</span></a>
+        </div>
+        <div class="npwp-text">
+            <span>Có nên ăn hoa quả sau bữa ăn</span>
+            <time><span><i class="far fa-calendar" aria-hidden="true"></i> 11-8-2019 22:51</span></time>
+            <p>Mặc dù ăn rau cho bữa sáng không phải là phổ biến trong chế độ ăn kiêng phương Tây, nhưng nó khá phổ biến trong chế độ ăn kiêng từ các nơi trên thế giới.</p>
+            <a href="../newdetail?id=3">xem thêm</a>
+        </div>
+    </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4">
+        <div class="np__wapper">
+        <div class="npwp-img">
+            <img src="https://i.ibb.co/nmfNpr5/fruitpicture.jpg" alt="">
+            <a href="#"><span>Fruit Fresh</span></a>
+        </div>
+        <div class="npwp-text">
+            <span>Có nên ăn salad cho bữa sáng?</span>
+            <time><span><i class="far fa-calendar" aria-hidden="true"></i> 8-8-2019 9:03</span></time>
+            <p>Mặc dù ăn rau cho bữa sáng không phải là phổ biến trong chế độ ăn kiêng phương Tây, nhưng nó khá phổ biến trong chế độ ăn kiêng từ các nơi trên thế giới.</p>
+            <a href="../newdetail?id=2">xem thêm</a>
+        </div>
+    </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4">
+        <div class="np__wapper">
+        <div class="npwp-img">
+            <img src="https://i.ibb.co/nmfNpr5/fruitpicture.jpg" alt="">
+            <a href="#"><span>Fruit Fresh</span></a>
+        </div>
+        <div class="npwp-text">
+            <span>Có bao nhiêu đường trong thức ăn đồ uống của bạn?</span>
+            <time><span><i class="far fa-calendar" aria-hidden="true"></i> 8-8-2019 9:03</span></time>
+            <p>Mặc dù ăn rau cho bữa sáng không phải là phổ biến trong chế độ ăn kiêng phương Tây, nhưng nó khá phổ biến trong chế độ ăn kiêng từ các nơi trên thế giới.</p>
+            <a href="../newdetail?id=1">xem thêm</a>
+        </div>
+    </div>
+    </div></div>
+
+        <div class="paginationjs"><div class="paginationjs-pages"><ul><li class="paginationjs-prev disabled"><a>«</a></li><li class="paginationjs-page J-paginationjs-page active" data-num="1"><a>1</a></li><li class="paginationjs-next disabled"><a>»</a></li></ul></div></div></div>
+    </section>
+    <!-- mail area -->
+    <section id="mail-area">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-around">
+                <div class="col-md-3 col-sm-12">
+                    <p class="text-center m-0">Đăng kí để nhận lời khuyên, tin tức và khuyến mãi từ Thật Fruit</p>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <div class="input-group">
+                        <input type="text" class="  search-query form-control" placeholder="Emai của bạn" id="valsmail" />
+                        <span class="input-group-btn">
+              <button class="btn" type="button" id="btsmail" onclick="setFormFeedBack()">
+                Đăng kí
+              </button>
+            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end mail area -->
+</main>
+    
+<!-- footer -->
+{% include 'footer.html' %}
+<!-- end footer -->
+
+<!-- Up to top -->
+<div class="nutup">
+    <button id="up" style="display: inline-block;"><i class="fas fa-arrow-up"></i></button>
+</div>
+<!-- end up to top -->
+    <!-- Main Js -->
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+
+
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+   
+    <title>ThatFruit</title>
+   
+    {% include 'meta-data.html' %}
+
+</head>
+<body>
+    
+<!-- header -->
+{% include 'header.html' %}
+<!-- end header -->
+<!-- search area -->
+{% include 'search.html' %}
+<!-- end search area -->
+<!-- nav -->
+{% include 'navbar.html' %}
+<!-- end nav -->
+    
+<script src="../static/js/ajax/ajax_login.js"></script>
+<main>
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner__wp">
+                        <div class="banner-text">
+                            <h4>Giới thiệu</h4>
+                            <a href="{{url_for('home')}}">Trang chủ</a>
+                            
+                        </div>
+                        <div class="banner-bg">
+                            <img src="../static/img/banner.png" alt="">
+                        </div>
+                        <span class="bor bor1"></span>
+                        <span class="bor bor2"></span>
+                        <span class="bor bor4"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="block-sign-in ">
+                <div class="form-sign col-lg-4 col-md-6 col-xs-8 " method="POST" role="form">
+                    <legend style="text-transform: uppercase;">Đăng Kí Tài Khoản</legend>
+                    <div class="form-group">
+                        <input id="name" type="text" class="form-control" placeholder="Họ và tên" required="" pattern="">
+                    </div>
+                    <div class="form-group">
+                        <input id="email" type="text" class="form-control" placeholder="Email" required="">
+                    </div>
+                    <div class="form-group">
+                        <input id="password" type="password" class="form-control" placeholder="Mật khẩu" required="">
+                    </div>
+                    <div class="form-group">
+                        <input id="password-v2" type="password" class="form-control" placeholder="Nhập lại mật khẩu" required="">
+                    </div>
+                    <button id="submitSign" type="submit" class="btn btn-success">Đăng ký</button>
+                </div>
+                <div class="section-or col-lg-4 col-md-6 col-xs-8">
+                    <a href="">Hoặc đăng nhập</a>
+                </div>
+                <div class="direc">
+                    <div class="form-direc ">
+                        <p>Đăng nhập | Tạo tài khoản với</p>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="https://img.icons8.com/ios-filled/46/3b5998/facebook-new.png">
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/google-plus--v2.png">
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/twitter-circled.png">
+                                </a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="mail-area">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-around">
+                <div class="col-md-3 col-sm-12">
+                    <p class="text-center m-0">Đăng kí để nhận lời khuyên, tin tức và khuyến mãi từ Thật Fruit</p>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <div class="input-group">
+                        <input type="text" class="  search-query form-control" placeholder="Emai của bạn" id="valsmail" />
+                        <span class="input-group-btn">
+              <button class="btn" type="button" id="btsmail" onclick="setFormFeedBack()">
+                Đăng kí
+              </button>
+            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    
+{% include 'footer.html' %}
+
+<!-- Up to top -->
+<div class="nutup">
+    <button id="up" style="display: inline-block;"><i class="fas fa-arrow-up"></i></button>
+</div>
+<!-- end up to top -->
+    <!-- Main Js -->
+<script src="../static/js/ajax/ajax_signIn.js"></script>   
+</body>
+</html>

@@ -1,0 +1,163 @@
+html,body{
+    min-width: 300px;
+}
+.container {
+    width: 100%;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.row {
+    padding: 0;
+}
+
+.infor-list-product {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 0rem 0.5rem;
+    flex-wrap: wrap;
+}
+
+.infor-list-product>.if-list-pr-left {}
+
+.if-list-pr-left>span {
+    font-size: var(--font-16);
+    font-weight: 500;
+}
+
+.if-list-pr-right {
+    font-size: var(--font-16);
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 255px;
+}
+
+.if-list-pr-right>span {
+    font-weight: 500;
+}
+
+.select-soft {
+    border: 1px solid rgb(224, 224, 224);
+    position: relative;
+}
+
+.select-soft>ul {
+    position: absolute;
+    list-style: none;
+    visibility: hidden;
+    width: 100%;
+    margin-bottom: 0;
+    transition: 0.2s;
+    border: 1px solid rgb(224, 224, 224);
+    background: white;
+    z-index: 1000;
+}
+.select-soft:hover>ul{
+    visibility: visible;
+
+}
+
+.select-soft>span {
+    cursor: pointer;
+    padding: 0.1rem 0.5rem;
+}
+.select-soft>span>i {
+    padding-left:  2rem;
+}
+
+.select-soft>ul>li {
+    padding: 0rem 1rem;
+    cursor: pointer;
+}
+.select-soft>ul>li:hover {
+    background: rgb(238, 238, 238);
+}
+
+.if-list-pr-right>i {
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+
+.list-product {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.list-product>ul {
+    height: 100%;
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.list-product>ul>li:hover .item-pr-title {
+    color: #73be47;
+}
+
+.item-pr {
+    width: 100%;
+    padding: 1rem;
+    display: inline-flex;
+}
+
+.it-prr {}
+
+.it-prr>.img-prduct {
+    width: 100%!important;
+}
+
+.it-prr>.name-product {
+    width: 100%!important;
+}
+
+.img-prduct {
+    width: 38%;
+}
+
+.name-product {
+    width: 58%
+}
+
+.head1 {
+    display: none;
+}
+
+.fa-prd {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item-pr-v2{
+    border: 1px solid #e3e3e3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+@media screen and (max-width: 845px) {
+    .item-pr{margin: auto;}
+}
+
+    .item-pr-v2 .img-prduct{
+        width: 100%;
+    }
+    .item-pr-v2 .name-product{
+        width: 100%;
+    }
+    .fp__wapper{
+        text-align: center!important;
+    }
+    .fp__wapper>p{
+        display: none!important;
+    }
+}
