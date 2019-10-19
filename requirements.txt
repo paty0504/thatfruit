@@ -1,0 +1,24 @@
+# ----------------------
+# Flask
+# ----------------------
+flask
+flask-restful
+flask-socketio
+
+# ----------------------
+# Database
+# ----------------------
+mongoengine
+
+# ----------------------
+# Production Server
+# ----------------------
+eventlet
+gunicorn
+
+# ----------------------
+# Others
+# ----------------------
+addict
+shortuuid
+© 2019 GitHub, Inc.
