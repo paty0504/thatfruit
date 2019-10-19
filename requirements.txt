@@ -5,10 +5,7 @@ flask
 flask-restful
 flask-socketio
 
-# ----------------------
-# Database
-# ----------------------
-mongoengine
+
 
 # ----------------------
 # Production Server
